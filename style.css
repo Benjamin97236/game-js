@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom left, rgb(187, 238, 187), rgb(5, 172, 5));
+    overflow: hidden;
+}
+
+.bodycontent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canv_container {
+    width: 850px;
+    height: 850px; 
+    position: relative;
+}
+
+.lose {
+    width: 900px;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 240, 240);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 100px;
+    transition: opacity 0.8s ease;
+}
+
+#losemsg {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#timecount {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+#sharetime {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgb(65, 65, 65);
+}
+
+#timecount h1 {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#gametimecount {
+    margin: 0px;
+    font-size: 40px;
+    z-index: 4;
+    color: rgb(117, 117, 117);
+}
+
+#gamecoincount {
+    margin: 0px;
+    font-size: 40px;
+    z-index: 4;
+    color: rgb(117, 117, 117);
+}
+
+.game_information {
+    height: 851px;
+    width: 300px;
+    background-color: rgb(236, 236, 236);
+    margin-top: 1px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.game_info_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.game_image {
+    margin-right: 20px;
+}
+
+.share_time_form {
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.share_input {
+    background: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border: 1px solid rgb(117, 117, 117);
+
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+
+    background-color: rgb(187, 238, 187);
+}
+
+.share_input:hover {
+    animation: fadeinputshare 0.3s ease forwards;
+}
+
+@keyframes fadeinputshare {
+    from {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(187, 238, 187);
+    }
+    to {
+        width: 105px;
+        height: 55px;
+        background-color: rgb(96, 212, 96);
+    }
+}
+
+#username_container {
+    margin: 0;
+    font-size: 25px;
+    color: rgb(117, 117, 117);
+}
+
+.share_input_container {
+    display: flex;
+
+}
+
+.game_keybinds {
+    position: absolute;
+    height: 50px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_keybinds h1 {
+    position: relative;
+    margin: 0;
+    margin: 60px;
+    color: rgb(56, 56, 56);
+}

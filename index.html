@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GameTime!</title>
+</head>
+<body>
+
+    <div class="game_keybinds">
+        <h1>Arrow keys to control</h1>
+        <h1>Space bar to stop</h1>
+    </div>
+    <div class="bodycontent">
+        <div class="game_information">
+            <div class="game_info_container">
+                <img src="img/timerimg.png" alt="timerPNG" width="50" class="game_image">
+                <h1 id="gametimecount"></h1>
+            </div>
+            
+            <div class="game_info_container">
+                <img src="img/hand_sanitizer.png" alt="coinPNG" width="50" class="game_image">
+                <h1 id="gamecoincount"></h1>
+            </div>
+            
+        </div>
+        <div class="canv_container">
+            <canvas id="canvas" height="850" width="850" style="position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
+            <canvas id="canvas2" height="850" width="850" style="position: absolute; top: 0; left: 0; z-index: 2;"></canvas>
+            <canvas id="canvas3" height="850" width="850" style="position: absolute; top: 0; left: 0; z-index: 2;"></canvas>
+
+            <div class="lose fadeOut" style="position: absolute; top: 0; left: 0; z-index: 4;">
+                <h1 id="losemsg">DU BLEV SMITTAD :(</h1>
+                <span id="timecount"><h1>Din tid:</h1><h1 id="timecontainer" style="color: green;"></h1></span>
+                <span id="timecount"><h1>Du samlade</h1><h1 id="coin_amount_container" style="color: green;"></h1><h1>handsprit</h1></span>
+                <h1 id="sharetime">Vill du dela dina resultat?</h1>
+                <div class="share_input_container">
+                    <button class="share_input" id="share_input_yes">Ja</button>
+                    <button class="share_input" id="share_input_no">Nej</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
